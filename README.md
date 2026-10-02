@@ -41,6 +41,16 @@ cp -R skill ~/.agents/skills/disposable-artifact
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skill
 ```
 
+本仓库还提供两个不依赖第三方包的检查器：
+
+```bash
+python3 scripts/verify.py
+python3 scripts/check_html.py path/to/artifact.html
+python3 -m unittest discover -s tests -v
+```
+
+`verify.py` 只检查 skill 结构、eval 和本地链接；`check_html.py` 只检查单文件、嵌入资源、文档元数据和证据片段链接。两者都不会代替真实浏览器、内容核验或可视化审查。
+
 ## 取舍
 
 本技能借鉴了 `display-dev/visualize` 的反模板审查、`claude-chart-dashboard` 的内容驱动版式和 `dataloupe` 的单文件离线交互原则。它不把这些项目作为运行时依赖，也不要求 CDN、npm、外部 API 或后端服务。
