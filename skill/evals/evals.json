@@ -29,6 +29,26 @@
         "The output offers a qualitative evidence-based alternative when useful.",
         "The output does not choose a hosting target or claim local output is published without concrete deployment details."
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "把这篇很长的中文材料做成 Archify 风格的单文件网页，正文必须能直接阅读，不能只在底部放一个原文框。",
+      "expected_output": "页面保留完整正文，并将标题、段落、列表、代码和链接渲染成可读内容；关系画布、摘要和证据检查器作为辅助视图，原文框只作保真附录。",
+      "expectations": [
+        "The page renders the complete source text as readable DOM content rather than only a summary or hidden raw-text box.",
+        "The page preserves source structure and keeps generated interpretation separate from source text.",
+        "The artifact remains self-contained and responsive."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "写一段中文技术说明：直接回答，不要套话、假想反对意见或虚构深度；需要时给具体数字和条件。",
+      "expected_output": "先给结论，再给原因和例子；使用自然中文、具体主体和动作；只保留会改变理解或使用方式的限制；不加服务式收尾。",
+      "expectations": [
+        "The response leads with the judgment and uses concrete subjects, actions, conditions, or evidence.",
+        "The response avoids filler openers, fake-deep framing, unnecessary contrast, and service-style closers.",
+        "The response does not translate English syntax into unnatural Chinese or invent terminology."
+      ]
     }
   ]
 }
