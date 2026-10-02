@@ -39,16 +39,6 @@
         "The page preserves source structure and keeps generated interpretation separate from source text.",
         "The artifact remains self-contained and responsive."
       ]
-    },
-    {
-      "id": 5,
-      "prompt": "写一段中文技术说明：直接回答，不要套话、假想反对意见或虚构深度；需要时给具体数字和条件。",
-      "expected_output": "先给结论，再给原因和例子；使用自然中文、具体主体和动作；只保留会改变理解或使用方式的限制；不加服务式收尾。",
-      "expectations": [
-        "The response leads with the judgment and uses concrete subjects, actions, conditions, or evidence.",
-        "The response avoids filler openers, fake-deep framing, unnecessary contrast, and service-style closers.",
-        "The response does not translate English syntax into unnatural Chinese or invent terminology."
-      ]
     }
   ]
 }
