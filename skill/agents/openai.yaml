@@ -1,0 +1,4 @@
+interface:
+  display_name: "一次性可视化产物"
+  short_description: "把复杂结果做成可交互 HTML 小工具"
+  default_prompt: "使用 $disposable-artifact 把当前结果做成一个边界清楚、来源可追溯的自包含 HTML 产物。"

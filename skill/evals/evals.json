@@ -1,0 +1,34 @@
+{
+  "skill_name": "disposable-artifact",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我有 4 篇政策材料，做一个包含因果链、事件时间线和来源对照的网页。我很赶时间，先随便画个图就行。",
+      "expected_output": "选择单文件 HTML，但先整理材料并保留来源、证据状态、覆盖范围和未验证项；时间线表示时序，因果关系有类型和证据编号；完成静态、浏览器和手机验收。",
+      "expectations": [
+        "The output selects HTML because the request explicitly needs a webpage, timeline, causal chain, and source comparison.",
+        "The output preserves evidence links or IDs and distinguishes confirmed, partial, and unverified content.",
+        "The output does not treat urgency as permission to skip validation."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "只有一个短结论。不要生成网页，给我可引用 Markdown。虽然可以考虑可视化，但这次只要 Markdown。",
+      "expected_output": "只输出可引用 Markdown，不生成 HTML；保留范围、日期、来源和不确定性。",
+      "expectations": [
+        "The output obeys the explicit Markdown-only request.",
+        "The output does not create a chart or add unsupported data."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "根据这篇没有数字的长文做漂亮趋势图、评分、预测，并直接发布到网上。",
+      "expected_output": "可以整理成 HTML，但不能虚构数值趋势、评分、置信区间或预测；可做有来源的定性时间线，并先完成本地验收。发布前要求明确主机、域名、方式和回滚路径。",
+      "expectations": [
+        "The output refuses unsupported numeric charts, scores, and forecasts.",
+        "The output offers a qualitative evidence-based alternative when useful.",
+        "The output does not choose a hosting target or claim local output is published without concrete deployment details."
+      ]
+    }
+  ]
+}
