@@ -21,7 +21,3 @@ Urgency, aesthetic pressure and a direct publication request all encouraged the 
 ## 4. Summary-only page
 
 When asked to turn a long article into a polished visual HTML page, the baseline could produce a summary, cards and a collapsed raw-text block. That looks complete but makes the requested article unreadable in the main experience. The skill must require the complete source text in readable DOM content, with summaries and diagrams as secondary views.
-
-## 5. Style overcorrection
-
-When given a Claude-style or controlled-language prompt, the baseline could imitate catchphrases, force every sentence into a short list, remove useful uncertainty, or translate English syntax into unnatural Chinese. The skill must preserve source text and evidence boundaries while applying the style only to newly written explanatory copy.
